@@ -1,0 +1,50 @@
+Every page needs: 
+
+
+
+
+NAVIGATION:
+
+<div id="nav">
+	<b><a href="link.php">TITLE</a> &nbsp; </b>
+	<b><a href="link.php">TITLE</a> &nbsp; </b>
+</div>
+
+
+
+
+
+
+LOGOUT: 
+
+<div id="logout">
+<a href="logout.php">Logout</a>
+</div>
+
+
+#logout{
+	float: right;	
+}
+
+
+
+
+SESSION START
+
+<?php
+ session_start();
+
+
+?>
+
+
+<body>
+<?php
+
+	if(!isset($_SESSION['username']))
+	{
+		header("Location:login.php");
+	}
+	
+	
+?>

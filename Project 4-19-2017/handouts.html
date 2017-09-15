@@ -1,0 +1,33 @@
+<?php
+//include "core/int.php";
+//include "includes/overall/header.php";
+
+
+
+include 'function.php';
+
+?>
+<div class="header"> 
+<h1>Teachers Lounge</h1>
+</div>
+
+
+<p>Welcome to A+ learning Gradebook.</p>
+
+<?php
+
+
+	
+	
+	if(loggedin()){
+		echo 'Logged in';
+	}else {
+
+?>
+
+<a href="logout.php">Logout</a>
+
+<?php
+}
+
+?>Í
